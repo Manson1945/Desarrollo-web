@@ -1,0 +1,145 @@
+
+
+    .formImageDesktop {
+        display: none;
+   }
+
+   main {
+    .tituloContactanos {
+      font-family: minusculabold;
+      background-color: $darkblue;
+      color: $white;;
+      text-align: center;
+      padding: 10px;
+      
+
+ }
+ .formContainer {
+      display: flex;
+      padding: 20px;
+      background-color: $darkblue;  
+      color: $white;;   
+      justify-content: center;
+      border-bottom: $white solid 2px;
+
+
+ }
+
+ form {
+    .form__section {
+        .form__input {
+            width: 100%;
+            padding: 2px;
+            margin-bottom: 25px; 
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border-bottom: $red solid 2px;
+            color: $white;;
+            transition-property: all;
+            transition-duration: 1s;
+            &:hover {
+            border-bottom:#d204d9 solid 2px
+            }
+            &:focus {
+            background: linear-gradient(to bottom, transparent, #686fbe69) ;
+            border-bottom:#d204d9 solid 2px         
+            }   
+       }
+    }
+
+    .textArea {
+        width: 100%;
+        margin: 7px;
+
+        p {
+            margin: 5px;
+       }
+
+       textarea {
+        width: 350px;
+        height: 300px;
+        background-color: transparent;
+        border: $red solid 2px;
+        outline: none;
+        padding: 2px;
+        color: $white;
+        transition-property: all;
+        transition-duration: 1s;
+        &:hover {
+            border: #d204d9 solid 2px;
+        }
+        &:focus {
+            background: linear-gradient(to bottom, transparent, #686fbe69) ;
+            border: #d204d9 solid 2px;
+        }
+   }   
+ }
+
+ .send {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    margin-left: 135px;
+}
+
+#envio {
+    width: 300px;
+    height: 30px;
+    margin: 20px;
+    position: relative;
+    left: 7px;
+    background-image: linear-gradient(to bottom , $darkblue, $red);
+    border: none;
+    color: $white;
+    font-weight: bolder;
+}
+
+.formImageMobile img {
+    margin-left: 30px;
+    width: 300px;
+    align-items: center;
+    border-radius: 50%;
+}
+    
+}
+} 
+
+
+@include desktop {
+
+    .formImageMobile {
+        display: none;
+    }   
+
+    .formContainer {
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 50px;
+
+        form {
+            width: 500px;
+        
+            textarea {
+                width: 490px;
+           }
+
+           .send {
+            position: relative;
+            left: 135px;
+       }
+       
+           #envio {
+            width: 445px;
+       }    
+
+
+            
+        }
+
+
+   }
+
+
+
+}

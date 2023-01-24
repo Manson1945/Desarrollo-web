@@ -1,0 +1,72 @@
+
+@media screen and (min-width: 571px) {
+
+main {
+    background-color:rgb(255, 255, 255);
+           grid-column: 1 / 7;
+
+    .ofertasSemanales {
+        font-family: minusculabold;
+        text-align: center;
+        background-image: linear-gradient(to right , #d90429 , #2b2d42);
+        width: 100%;
+        color: #edf2f4;
+    }
+
+    section {
+               
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        article {
+            font-family: minusculasemibold;
+            width: 60vw;
+            max-width: 600px;
+            margin: 20px;  
+            text-align: center;
+            transition-property:all;
+            transition-duration: 1s;
+            box-shadow: 2px 4px 15px 1px #2b2d42;
+            &:hover {
+            transform: scale(105%);        
+            }
+            &:hover p {
+                transform: scale(110%);
+                
+            }
+            &:hover span {
+                color:#d90429;
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+                
+        }
+
+           p {
+            text-align: center;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        span {
+            width: 100%;
+            color: #a30479;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition-property: all;
+            transition-duration: 2s; 
+            
+  
+         }
+
+        
+      }
+                 
+    }
+          
+  }
+
+}

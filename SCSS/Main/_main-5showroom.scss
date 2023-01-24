@@ -1,0 +1,80 @@
+
+
+
+    .showroom__text--desktop {
+         display: none;
+    }
+
+
+.textContainer {
+    background-color: $darkblue;
+    border-top: $white solid 2px;
+    padding: 10px;
+    color: $white;
+}
+
+
+.showroom {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: menu;
+}
+
+
+.showroom__text {
+    text-align: center;
+    
+}
+
+
+.direccion {
+    padding: 10px;
+    background-color: $white;
+    color: $darkblue;
+    font-weight: bolder;
+    
+}
+
+
+
+
+@include desktop {
+
+    .textContainer {
+         background-color: $white;
+         color: $darkblue
+         
+    }
+
+    .showroom__text {
+         display: none;
+    }
+
+    .showroom__text--desktop {
+         font-family: minusculasemibold;
+         display: flex;
+         width: 500px;
+         align-content: center;
+         position: relative;
+         left: 600px;
+         bottom: 600px;
+         color: $darkblue;
+         font-size: 2rem;
+
+    }
+
+
+    .showroom {
+         font-family: minusculabold;
+         text-align: start;
+         font-size: 5rem;
+    }
+
+
+    .gps {
+         box-shadow: 2px 4px 15px 1px $darkblue;
+         
+    }
+
+
+}

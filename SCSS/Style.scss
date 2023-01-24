@@ -1,0 +1,149 @@
+* {margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     
+  }
+  
+  @media screen and (max-width: 570px) {
+       body {
+            
+            display: none;
+       }   
+  }
+
+  .gridContainer {
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: 1fr auto auto 14vh; 
+   }
+
+
+   .gridContainer__items {
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     
+   }
+  
+  /* FONTS */
+  
+  @font-face {
+       font-family: titulo;
+       src: url(../ASSETS/FONTS/EBGaramond-ExtraBoldItalic.ttf);
+  }
+  
+  @font-face {
+       font-family: menu;
+       src: url(../ASSETS/FONTS/NotoSerifToto-Bold.ttf);
+  }
+  
+  @font-face {
+       font-family:mayusculabold ;
+       src: url(../ASSETS/FONTS/Domine-Bold.ttf);
+  }
+  
+  @font-face {
+       font-family:mayusculasemibold ;
+       src: url(../ASSETS/FONTS/Domine-SemiBold.ttf);
+  }
+  
+  @font-face {
+       font-family:minusculalight ;
+       src: url(../ASSETS/FONTS/Literata-Light.ttf);
+  }
+  
+  @font-face {
+       font-family:minusculasemibold ;
+       src: url(../ASSETS/FONTS/Literata-SemiBold.ttf);
+  }
+  
+  @font-face {
+       font-family:minusculabold ;
+       src: url(../ASSETS/FONTS/Literata-Bold.ttf);
+  }
+  
+  @import "./variables";
+  @import "./mixin";
+  
+  /* CSS INDEX MOBILE */
+ 
+ 
+ @include mobile {
+ 
+     #titulodesktop {
+          display: none;
+     }
+     
+     .textoYlogo {
+          display: none;
+     }
+
+     #menu {
+          display: none;
+ } 
+     
+     body {
+          width: 100%;
+          height: 100vh;
+          
+     }
+
+     .cuentaYregistro {
+          display: none;
+     }
+
+     
+     
+    
+
+}
+    
+
+
+    @include desktop {
+ 
+      
+ 
+         .menuResponsive__ul {
+           display: none;
+         }
+ 
+ 
+         #search {
+           display: none;
+         }
+ 
+ 
+         .gridContainer__items .tituloMobile {
+           display: none;
+        }
+
+        #shop {
+          display: none;
+        } 
+ 
+ 
+ 
+         body {
+           width: 100%;
+           height: 100vh; 
+         }
+
+     
+     }
+
+     
+
+     @import "./header";
+
+     @import "./Main/main-index";
+
+     @import "./Main/main-2guitarras";
+
+     @import "./Main/main-3nosotros.scss";
+
+     @import "./Main/main-4contacto";
+
+     @import "./Main/main-5showroom";
+
+     @import "./footer"

@@ -1,0 +1,36 @@
+
+footer {
+    font-family: minusculalight;
+    padding: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: $gradientright;
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+    color: $white;
+
+    p {
+    text-decoration: underline;
+    }
+
+    a {
+     text-decoration: none;
+     display: block;
+     color: $white;
+     padding: 1px;
+     transition: all;
+     transition-duration: .5s;
+     &:hover {
+     color: #edf2f4a1;
+     }
+    }
+
+    .redesFooter i {
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        margin-top: 10px;
+        color: $white;
+}  
+
+}
