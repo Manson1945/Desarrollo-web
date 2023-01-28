@@ -1,22 +1,29 @@
 
 
 main {
+    
     .tituloGuitarras {
+        font-family: minusculabold;
+        font-size: 1.2rem;
         text-align: center;
         color: $white;
         background-image:$gradientright;
         padding: 10px;
-        font-size: 1.5rem;
+        
     
     }
 
     section {
+
         .guitarras h3 {
+            font-family:minusculabold ;
+            font-size: 1.2rem;
             margin: 5px;
             color: $darkblue;
             line-height: 30px;
             transition-property: all;
             transition-duration: 2s;
+            
         
         }  
     }
@@ -29,27 +36,46 @@ main {
 @include desktop {
  
  main {
+
     .tituloGuitarras {
-        font-size: 2.5rem;
+        border-top: $white solid 1px;
+        font-size: 2rem;
     }
 
-    .guitarras {
-        margin: 50px;
-        padding: 5px;
-        width: 500px;
-        height: 500px;
-        transition-property: all;
-        transition-duration: 2s;
-        &:hover {
-        transform: scale(115%);
-         font-size: 1.3rem;
-        }
+    .guitarrasContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
-        img {
+        .guitarras {
+        
+            margin: 50px;
+            padding: 5px;
             width: 400px;
             height: 400px;
+            transition-property: all;
+            transition-duration: 2s;
+            &:hover {
+            transform: scale(110%);
+             
+            span {
+                font-size: 2rem;
+            }
+            }
+    
+    
+            img {
+                width: 300px;
+                height: 300px;
+           }
        }
-   }
+        
+    }
+    
+    
+
+    
  }
  
 }

@@ -1,4 +1,4 @@
-
+@include mobile {
 
     .formImageDesktop {
         display: none;
@@ -105,13 +105,15 @@
 }
 } 
 
+}
 
 @include desktop {
 
     .formImageMobile {
         display: none;
     }   
-
+main {
+    
     .formContainer {
         justify-content: space-evenly;
         align-items: center;
@@ -141,5 +143,7 @@
    }
 
 
+
+}
 
 }

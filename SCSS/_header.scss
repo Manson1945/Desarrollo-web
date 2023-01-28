@@ -319,7 +319,7 @@ header { width: 100%;
                   }
 
                   .menuDesktop__li {
-           
+                    margin-top: 8px;
                     transition-property: all;
                     transition-duration: 2s;
                     &:hover {
@@ -369,7 +369,23 @@ header { width: 100%;
                          
                      }   
                      
-                    
+           #menu ul li {
+                              
+                             
+                    &:hover ul {
+                         background-image:$gradientright;
+                         display:block;
+                         margin-left: 155px;
+                         line-height: 30px;
+                         margin-top: 5px;
+                         padding: 7px;
+                         background-image:$gradientright;
+                         color: $white;
+                         border-radius: 7px; 
+                } 
+                         
+                     }
+          
           
             }  
 
