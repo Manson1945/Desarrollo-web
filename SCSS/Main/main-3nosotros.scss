@@ -34,9 +34,8 @@ main {
         font-weight: bolder;
         transition-property: all;
         transition-duration: 2s;
-        &:hover {
-            background-color: $red;
-        }
+
+       
                
        }   
        
@@ -75,11 +74,15 @@ main {
        .shopButton {
             width: 600px;
             height: 50px;
+
+            &:hover {
+                transform: scale(110%);
+            }
        }
    
        .text {
             width: 30vw;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
        }
     }
 }
